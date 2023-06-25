@@ -1,0 +1,180 @@
+:root {
+  --color-start: #FFB721cc;
+  --color-blue: #1890ffcc;
+  --color-blue-light: #b1e3ff;
+  --color-yellow: #FFAA33cc;
+  --color-red: #FF3333cc;
+  --color-orange: #FF725Ecc;
+  --color-orange-light: #FF8D7C;
+  --color-green: #00CC66cc;
+  --color-primary: #38383A;
+  --background-color: rgb(246, 246, 247);
+  --color-shadow: #cacaca;
+  --color-border: #e7e7e7;
+  --color-white: rgb(246, 246, 247);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px !important;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue) !important;
+  border-radius: 4px;
+  line-height: 18px;
+  height: auto;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-blue) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 20px !important;
+  border: 1px solid var(--color-blue) !important;
+  border-radius: 4px;
+  line-height: 18px;
+  height: auto;
+  cursor: pointer;
+  background: var(--color-blue) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+
+}
+
+.input-app,
+.textarea-app {
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.input-app:hover,
+.input-app:focus,
+.input-app:focus-visible,
+.textarea-app:hover,
+.textarea-app:focus,
+.textarea-app:focus-visible {
+  border-color: var(--color-blue) !important;
+  outline: 0 !important;
+}
+
+.select-app .ant-select-selector {
+  border: 1px solid var(--color-border) !important;
+  border-radius: 3px;
+  padding: 7px 10px !important;
+  text-align: left;
+  min-height: 46px;
+}
+
+.select-app .ant-select-selector:hover,
+.select-app .ant-select-selector:focus,
+.select-app .ant-select-selector:focus-visible {
+  border-color: var(--color-blue) !important;
+  outline: 0 !important;
+}
+
+.modal-preview-image-app .ant-modal-content {
+  padding: 0;
+  background-color: transparent;
+}
+
+.text-hover:hover {
+  color: var(--color-blue) !important;
+  opacity: 0.8;
+}
+
+.h1-app {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.h2-app {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.h3-app {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-detail {
+  padding: 12px 16px;
+  background: #f4f6f9cc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  line-height: 32px;
+}
+.item-detail-collection {
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.collection-group {
+  display: none;
+}
+
+#analysis {
+  display: none;
+}
+
+.container-title {
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  transform: rotate(180deg);
+  left: 0;
+  font-weight: 400;
+  cursor: pointer;
+  color: gray;
+  display: none;
+}
+.analysis-title {
+  display: none;
+}
+
+.container {
+  padding-bottom: 50px;
+}
