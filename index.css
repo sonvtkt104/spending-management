@@ -178,3 +178,51 @@ h1 {
 .container {
   padding-bottom: 50px;
 }
+
+@media only screen and (max-width: 575px) {
+  .container {
+    padding: 0 15px 50px;
+    max-width: auto;
+    /* width: 100%; */
+  }
+
+  canvas {
+    width: calc(100%) !important;
+  }
+
+  .chart-analysis-responsive {
+    flex-direction: column-reverse;
+    margin-top: 30px !important;
+  }
+
+  .chart-analysis-responsive > div:last-child {
+    min-height: calc(100vw - 30px) !important;
+    width: calc(100vw - 30px) !important;
+  }
+
+  .add-item {
+    flex-direction: column;
+  }
+
+  .add-item input {
+    width: calc(100% - 42px);
+    margin-bottom: 15px;
+  }
+  .add-item select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .add-item > div:last-child {
+    text-align: center;
+  }
+
+  .spending-title {
+    margin-top: 10px;
+  }
+
+  .analysis-label {
+    align-items: center;
+    margin-top: 20px
+  }
+}
