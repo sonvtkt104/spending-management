@@ -4,17 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/note-book.png">
   <title>Quản lý tiêu dùng</title>
   <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
 <body>
-  <div class="container">
-    <div>
+  <div class="container" style="position: relative;">
+    <div style="position: relative; z-index: 10;">
 
       <h1 style="margin: 30px 0" class="container-title">
         <span class="back">&gt;</span>
-        Quản lý tiêu dùng
+        <span style="position: relative;">
+          <span style="position: absolute; right: -40px; top: -15px;">
+            <img src="./images/paper-plane.png" alt="paper"
+              style="width: 40px;"
+            >
+          </span>
+          Quản lý tiêu dùng
+        </span>
       </h1>
   
       <!-- Collection -->
@@ -38,9 +46,9 @@
   
       <!-- Date -->
       <div class="flex date-picker" style="justify-content: space-between;">
-        <div class="flex-col-center date-picker-title">
+        <span class="flex-col-center date-picker-title">
           <h2 class="date-name">Hôm nay</h2>
-        </div>
+        </span>
         <div class="flex-col-center">
           <div class="h3-app analysis-title flex-col-center" style="font-weight: 500; color: var(--color-blue);"></div>
         </div>
